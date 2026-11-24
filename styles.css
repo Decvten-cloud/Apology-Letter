@@ -314,7 +314,6 @@ h1 {
   border-radius: 50%;
   background: linear-gradient(145deg, #f6dfe5, #efd4d9);
   box-shadow: 0 6px 18px rgba(142, 94, 105, .14);
-  cursor: pointer;
   transition: transform .25s, box-shadow .25s;
 }
 .memory:hover { transform: rotate(-2deg) scale(1.03); box-shadow: 0 9px 22px rgba(142,94,105,.20); }
