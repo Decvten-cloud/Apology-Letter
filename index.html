@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Little Apology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="scene">
+      <div class="hearts" aria-hidden="true">
+        <span>♥</span><span>♥</span><span>♥</span><span>♥</span><span>♥</span>
+      </div>
+
+      <section class="letter-card" id="letterCard" aria-live="polite">
+        <div class="letter-flap" aria-hidden="true"></div>
+
+        <button class="tease-envelope" id="teaseEnvelope" type="button" aria-label="Touch the letter to open it">
+          <span class="tease-heart">♥</span>
+          <span class="tease-copy">
+            <strong id="teaseTitle">TOUCH ME</strong>
+            <small id="teaseHint">Ada surat buat kamu</small>
+          </span>
+          <span class="tease-arrow">↓</span>
+        </button>
+
+        <div class="letter-content">
+          <button class="close-button" id="closeLetter" type="button" aria-label="Close letter">×</button>
+          <p class="eyebrow">Letter buat Princess mgl</p>
+          <h1>Maaf ya Naya.</h1>
+
+          <div class="paper-copy">
+            <p>
+              Maaf ya Naya, aku suka buat kamu ovt, sedih, dan banyak hal lain lagi. ♥
+            </p>
+            <p>
+              Tapi satu hal yang ingin aku kamu tau aku masih pengen terus belajar mengenal kamu, memahami cara kamu berpikir, mengerti hal-hal yang membuat kamu bahagia maupun sedih, dan menjadi seseorang yang bisa membuat kamu merasa aman untuk menjadi diri sendiri.
+            </p>
+            <p>
+              Tolong terima surat kecil ini, ya? Anggap aja ini salah satu cara aku mengingatkan kamu bahwa kamu berharga buat aku.
+            </p>
+            <p>
+              Oh iya, satu hal lagi yang hampir lupa...
+            </p>
+            <p>
+              Kamu cantik dehhh. Jangan lupa senyum, nanti aku makin suka. 😙❤️
+            </p>
+            <p>
+              tuh contohnya dibawah ⬇
+            </p>
+          </div>
+
+          <label class="memory" id="memoryFrame" for="photoInput">
+            <input id="photoInput" type="file" accept="image/*" />
+            <img id="memoryPhoto" alt="" hidden />
+            <span class="photo-placeholder">
+              <span class="heart-icon">♥</span>
+              <span>Add a picture</span>
+            </span>
+          </label>
+
+          <p class="signature">With all my heart, <span>Faiq - si tua</span></p>
+        </div>
+      </section>
+
+      <div class="cat-stage" id="catStage" aria-hidden="true">
+        <div class="letter-in-mouth" id="letterInMouth">
+          <span></span>
+        </div>
+
+        <div class="cat">
+          <div class="tail"></div>
+          <div class="body">
+            <span class="body-heart">♥</span>
+            <div class="paw paw-front"></div>
+            <div class="paw paw-back"></div>
+          </div>
+          <div class="head">
+            <div class="ear ear-left"><span></span></div>
+            <div class="ear ear-right"><span></span></div>
+            <div class="face">
+              <span class="eye eye-left"></span>
+              <span class="eye eye-right"></span>
+              <span class="blush blush-left"></span>
+              <span class="blush blush-right"></span>
+              <span class="nose"></span>
+              <span class="mouth"></span>
+              <span class="whiskers whiskers-left"></span>
+              <span class="whiskers whiskers-right"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="replay-button" id="replayButton" type="button">
+        <span>Replay</span>
+      </button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
